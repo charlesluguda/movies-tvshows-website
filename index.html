@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDb Movie Search</title>
+    <!--============ CSS STYLES =====================-->
+    <link rel="stylesheet" href="styles.css">
+    <!--============= GOOGLE FONTS ===================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--================= BOOSTRAP ICONS ========================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="navlinks">
+                <ul class="links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#love-stories-results">Movies</a></li>
+                    <li><a href="#tv-results">TV Shows</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="search-container" id="home">
+        <div class="container">
+            <h1>Home Of Movies and TV Shows</h1>
+            <input type="text" id="query" placeholder="Enter movie or TV show name">
+            <button id="search">Search</button>
+        </div>
+    </div>
+
+    <div class="results">
+        <h2>Search Results</h2>
+        <div class="results-content">          
+        <div id="search-results"></div>
+        </div>
+    </div>
+
+    <div class="results">
+        <h2>Love Stories</h2>
+        <div class="results-content">          
+        <div id="love-stories-results"></div>
+        </div>
+    </div>
+
+    <div class="results">
+        <h2>Action Movies</h2>
+        <div class="results-content">          
+        <div id="action-movies-results"></div>
+        </div>
+    </div>
+
+    <div class="results">
+        <h2>Popular TV Shows</h2>
+        <div class="results-content">          
+        <div id="tv-results"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Seven Movies</div>
+                <div class="socials">
+                    <p>Follow us</p>
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>  
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#love-stories-results">Movies</a></li>
+                        <li><a href="#tv-results">TV Shows</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p><small>Develped by &copy luguda</small></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
